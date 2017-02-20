@@ -41,10 +41,10 @@ class OperationType(Enum):
 
 class OperationFactory:
     operation = {}
-    operation["+"] = OperationAdd();
-    operation["-"] = OperationMinus();
-    operation["*"] = OperationMultiply();
-    operation["/"] = OperationDivide();
+    operation["+"] = OperationAdd()
+    operation["-"] = OperationMinus()
+    operation["*"] = OperationMultiply()
+    operation["/"] = OperationDivide()
     def creat_operation(self, type):
         if type in self.operation:
             op = self.operation[type]
@@ -61,7 +61,3 @@ if __name__ == '__main__':
     operation.numA = int(numA)
     operation.numB = int(numB)
     print(operation.get_result())
-
-
-
-
